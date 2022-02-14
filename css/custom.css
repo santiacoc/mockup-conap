@@ -1,0 +1,23 @@
+.container {
+    max-width: 768px !important;
+}
+
+.navbar-brand img {
+    max-height: 45px;
+}
+
+.btn-secondary{
+    color: #fff !important; 
+}
+
+.btn-outline-secondary:hover{
+    color: #fff !important; 
+}
+
+
+.tabla-bien-chica {
+    font-size: smaller !important;    
+}
+.texto-bien-chico {
+    font-size: .9em !important;  
+}

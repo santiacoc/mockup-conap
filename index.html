@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/main.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/custom.css" rel="stylesheet" crossorigin="anonymous">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+  
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#"><img src="./imgs/logoCon.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Tambos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Propuestas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nueva calibración
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Nueva</a></li>
+                  <li><a class="dropdown-item" href="#">A partir de planilla de costos</a></li>
+                  <li><a class="dropdown-item" href="#">A partir de planilla de producción competitiva</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+  <div class="container">
+
+    <br>
+    <h1>Calibración</h1>
+
+
+    <div class="row align-items-center mb-3 mt-3">
+        <div class="col-5">
+          <label for="inputPassword6" class="col-form-label">Plataforma de pastoreo (Hás)</label>
+        </div>
+        <div class="col-5">
+          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+    </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col-5">
+          <label for="inputPassword6" class="col-form-label">Desperdicios (Hás)</label>
+        </div>
+        <div class="col-5">
+          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Incluye los desperdicios del área de plataforma y también del área de reservas.">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="row align-items-center mb-3">
+        <div class="col-5">
+          <label for="inputPassword6" class="col-form-label">Área de reservas (Hás)</label>
+        </div>
+        <div class="col-5">
+          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+      </div>
+
+      <p class="col-form-label">Más parámetros....</p>
+      <p class="col-form-label">.......</p>
+      <p class="col-form-label">.......</p>
+
+
+
+
+
+
+
+      <div class="d-grid mt-3">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+          Alimentos
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body table-responsive">
+          <table class="table table-sm table-bordered tabla-bien-chica">
+            <thead>
+              <tr>
+                <th scope="col">Hás</th>
+                <th scope="col">Uso</th>
+                <th scope="col">Marzo</th>
+                <th scope="col">Abril</th>
+                <th scope="col">Mayo</th>
+                <th scope="col">Junio</th>
+                <th scope="col">Julio</th>
+                <th scope="col">Agosto</th>
+                <th scope="col">Septiembre</th>
+                <th scope="col">Octubre</th>
+                <th scope="col">Noviembre</th>
+                <th scope="col">Diciembre</th>
+                <th scope="col">Enero</th>
+                <th scope="col">Febrero</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>TB-Lotus-Festuca Secano P 1 (TEMPRANO)</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Pradera 2° año base festuca SFS rot</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Alfalfa 1</td>
+              </tr>
+              
+            </tbody>
+          </table>
+          
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="d-grid mt-3">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Pasturas
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample">
+
+        <div class="card card-body table-responsive">
+          <div class="row align-items-center mb-3">
+            <div class="col-3">
+              <label for="inputPassword6" class="col-form-label  form-control-sm">Productividad (%)</label>
+            </div>
+            <div class="col-2">
+              <input type="number" id="inputPassword6" class="form-control  form-control-sm" value="15" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Productividad global del sistema, aumenta o disminuye el global por este factor.">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+            
+              
+          
+        </div>
+
+          <table class="table table-sm table-bordered tabla-bien-chica">
+            
+            <tr>
+              <td > </td>
+              <td > </td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+              <td >100</td>
+            </tr>
+
+
+              <tr>
+                <td >Hás</td>
+                <td >Uso</td>
+                <td >Mar</td>
+                <td >Abr</td>
+                <td >May</td>
+                <td >Jun</td>
+                <td >Jul</td>
+                <td >Ago</td>
+                <td >Set</td>
+                <td >Oct</td>
+                <td >Nov</td>
+                <td >Dic</td>
+                <td >Ene</td>
+                <td >Feb</td>
+              </tr>
+            
+            
+              <tr>
+
+                <td><input type="number" class="form-control form-control-sm" value="15" ></td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected>Uso</option>
+                    <option >TB-Lotus-Festuca Secano P 1 (TEMPRANO)</option>
+                    <option >Pradera 2° año base festuca SFS rot</option>
+                    <option >Pradera 3° año base festuca SFS rot</option>
+                    <option >Avena SFS</option>
+                    <option >SORGO TEMPRANO OCTUBRE</option>
+                    <option >Alfalfa 1</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="number" class="form-control form-control-sm" value="20" ></td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected>Uso</option>
+                    <option >TB-Lotus-Festuca Secano P 1 (TEMPRANO)</option>
+                    <option >Pradera 2° año base festuca SFS rot</option>
+                    <option >Pradera 3° año base festuca SFS rot</option>
+                    <option >Avena SFS</option>
+                    <option >SORGO TEMPRANO OCTUBRE</option>
+                    <option >Alfalfa 1</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="number" class="form-control form-control-sm" value="5" ></td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected>Uso</option>
+                    <option >TB-Lotus-Festuca Secano P 1 (TEMPRANO)</option>
+                    <option >Pradera 2° año base festuca SFS rot</option>
+                    <option >Pradera 3° año base festuca SFS rot</option>
+                    <option >Avena SFS</option>
+                    <option >SORGO TEMPRANO OCTUBRE</option>
+                    <option >Alfalfa 1</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              
+            
+          </table>
+          <div class="row">
+            <div class="col-2">
+              <button class="btn btn-primary btn-sm" type="button">+ fila</button>
+          
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+
+
+
+
+
+
+      <div class="d-grid mt-3">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+          Requerimientos animales
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body table-responsive">
+          <table class="table table-sm table-bordered tabla-bien-chica">
+            <thead>
+              <tr>
+                <th scope="col">Hás</th>
+                <th scope="col">Uso</th>
+                <th scope="col">Marzo</th>
+                <th scope="col">Abril</th>
+                <th scope="col">Mayo</th>
+                <th scope="col">Junio</th>
+                <th scope="col">Julio</th>
+                <th scope="col">Agosto</th>
+                <th scope="col">Septiembre</th>
+                <th scope="col">Octubre</th>
+                <th scope="col">Noviembre</th>
+                <th scope="col">Diciembre</th>
+                <th scope="col">Enero</th>
+                <th scope="col">Febrero</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td>TB-Lotus-Festuca Secano P 1 (TEMPRANO)</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Pradera 2° año base festuca SFS rot</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Alfalfa 1</td>
+              </tr>
+              
+            </tbody>
+          </table>
+          
+          
+        </div>
+      </div>
+
+
+
+
+      
+      
+      <div class="d-grid gap-5 mt-3">
+        <button class="btn btn-secondary btn-lg" type="button">Calibrar/recalibrar</button>
+      </div>
+      <br>
+
+
+
+
+
+
+
+
+      <div class="row align-items-center">
+        <div class="col-4">
+        </div>
+        <div class="col-3">
+          <p class="text-center">Año calculado</p>
+        </div>
+        <div class="col-3">
+          <p class="text-center">Año de referencia</p>
+        </div>
+        
+      </div>
+
+    <div class="row align-items-center mb-3">
+      <div class="col-4">
+        <label for="inputPassword6" class="col-form-label">Pasturas Kg MS/Há VM</label>
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" disabled value="5636" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" value="34253" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-2">
+        <label for="inputPassword6" class="col-form-label text-success">5%</label>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-3">
+      <div class="col-4">
+        <label for="inputPassword6" class="col-form-label">Reservas Kg MS/Há VM</label>
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" disabled value="67534" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" value="54355" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-2">
+        <label for="inputPassword6" class="col-form-label text-success">5%</label>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-3">
+      <div class="col-4">
+        <label for="inputPassword6" class="col-form-label">Concentrados Kg MS/Há VM</label>
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" disabled value="5345" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" value="2345" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-2">
+        <label for="inputPassword6" class="col-form-label text-danger">25%</label>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-3">
+      <div class="col-4">
+        <label for="inputPassword6" class="col-form-label">Margen alim. U$S/há	</label>
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control" disabled value="5500" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-3">
+        <input type="number" id="inputPassword6" class="form-control"  value="564" aria-describedby="passwordHelpInline">
+      </div>
+      <div class="col-2">
+        <label for="inputPassword6" class="col-form-label text-success">9%</label>
+      </div>
+    </div>
+
+    <br>
+    <div class="alert alert-danger" role="alert">
+      El valor XXXXXXXXXXX es muy alto.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      El valor XXXXXXXXXXXX debería estar en el rango de XXXXXX XXXXXXX.
+    </div>
+
+
+
+    
+    </div>
+    </div>
+    <br><br><br>
+
+
+
+<!-- #004D96 Azul -->
+<!--#85B037 Verde  -->
+<!-- #FCFCFD Blanco -->
+<script src="https://kit.fontawesome.com/db809623e0.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
