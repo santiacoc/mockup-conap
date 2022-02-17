@@ -41,6 +41,10 @@
                   <li><a class="dropdown-item" href="#">A partir de planilla de producción competitiva</a></li>
                 </ul>
               </li>
+                <li class="nav-item login">
+                  <a class="nav-link" href="./login/login.html">Login</a>
+                </li>
+
             </ul>
           </div>
         </div>
@@ -53,47 +57,135 @@
     <h1>Calibración</h1>
 
 
-    <div class="row align-items-center mb-3 mt-3">
-        <div class="col-5">
-          <label for="inputPassword6" class="col-form-label">Plataforma de pastoreo (Hás)</label>
+    <div class="row align-items-center mb-3 mt-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Plataforma de pastoreo (hás)</label>
         </div>
-        <div class="col-5">
-          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        <div class="col-3">
+          <input type="number" class="form-control" >
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title=" Plataforma de Pastoreo Vacas en Ordeñe: es el área potencial de pastoreo para vacas ordeñe (el área real del tambo, sin ponderar área de reserva (cultivos para silo) ni potreros de vacas secas).">
+            <i class="fas fa-info-circle"></i>
+          </button>
         </div>
     </div>
 
-      <div class="row align-items-center mb-3">
-        <div class="col-5">
-          <label for="inputPassword6" class="col-form-label">Desperdicios (Hás)</label>
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Desperdicios (hás)</label>
         </div>
-        <div class="col-5">
-          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        <div class="col-3">
+          <input type="number" class="form-control">
         </div>
-        <div class="col-2">
+        <div class="col-1">
           <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Incluye los desperdicios del área de plataforma y también del área de reservas.">
             <i class="fas fa-info-circle"></i>
           </button>
         </div>
       </div>
       
-      <div class="row align-items-center mb-3">
-        <div class="col-5">
-          <label for="inputPassword6" class="col-form-label">Área de reservas (Hás)</label>
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label for="inputPassword6" class="col-form-label">Área de reservas (hás)</label>
         </div>
-        <div class="col-5">
-          <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        <div class="col-3">
+          <input type="number" class="form-control" >
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Es el área destinada a la confección de reserva. Son reservas que salen de áreas de apoyo y no de la PPVO.">
+            <i class="fas fa-info-circle"></i>
+          </button>
         </div>
       </div>
 
-      <p class="col-form-label">Más parámetros....</p>
-      <p class="col-form-label">.......</p>
-      <p class="col-form-label">.......</p>
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Área de vaca masa (hás)</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control" >
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Superficie de Vaca Masa (há): Incluye el área de pastoreo directo de vacas en ordeñe (PPVO) y vacas secas, más el área de reservas destinadas a las vaca masa. Además incluye el área de desperdicio. Se debe poner un valor promedio del año.">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Área de recría (hás)</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Área agrícola (hás)</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control" >
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Área SPL (hás)</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control" >
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Superficie Lechera (S.P.L.): se refiere al área (há) destinada a la lechería incluye vaca masa y recría.">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Peso Vivo (Kg)</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Energía extra por Caminata %</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control" value="25" >
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title='Valor recomendado 25 %'>
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3 text-end">
+        <div class="col-6">
+          <label class="col-form-label">Factor de corrección de consumo</label>
+        </div>
+        <div class="col-3">
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title='Este valor permite aumentar el consumo y por ende disminuir la necesidad de concentración energética y proteíca del alimento.'>
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
 
 
 
 
-
-
+<!-------------------------------------------- ALIMENTOS ------------------------------------------------------------->
 
       <div class="d-grid mt-3">
         <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
@@ -105,40 +197,243 @@
           <table class="table table-sm table-bordered tabla-bien-chica">
             <thead>
               <tr>
-                <th scope="col">Hás</th>
-                <th scope="col">Uso</th>
-                <th scope="col">Marzo</th>
-                <th scope="col">Abril</th>
-                <th scope="col">Mayo</th>
-                <th scope="col">Junio</th>
-                <th scope="col">Julio</th>
-                <th scope="col">Agosto</th>
-                <th scope="col">Septiembre</th>
-                <th scope="col">Octubre</th>
-                <th scope="col">Noviembre</th>
-                <th scope="col">Diciembre</th>
-                <th scope="col">Enero</th>
-                <th scope="col">Febrero</th>
+                <td ><strong>Alimentos</strong></td>
+                <td ></td>
+                <td >Mar</td>
+                <td >Abr</td>
+                <td >May</td>
+                <td >Jun</td>
+                <td >Jul</td>
+                <td >Ago</td>
+                <td >Set</td>
+                <td >Oct</td>
+                <td >Nov</td>
+                <td >Dic</td>
+                <td >Ene</td>
+                <td >Feb</td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>10</td>
-                <td>TB-Lotus-Festuca Secano P 1 (TEMPRANO)</td>
+                <td>Pastura</td>
+                <td class="align-middle text-center" rowspan="8">Mcal ENL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
               </tr>
               <tr>
-                <td>20</td>
-                <td>Pradera 2° año base festuca SFS rot</td>
+                <td>Reserva calidad baja</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td>15</td>
-                <td>Alfalfa 1</td>
+                <td>Reserva calidad alta</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Reservas de primavera</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Compra reservas</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Conc. Energético </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Conc. Proteico </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Afrechillos</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               
             </tbody>
           </table>
+          <div class="row align-items-center">
+            <div class="col-4">
+            </div>
+            <div class="col-3">
+              <p class="text-center texto-bien-chico">Stock disponible Kg MS</p>
+            </div>
+            <div class="col-3">
+              <p class="text-center texto-bien-chico">Stock disponible Kg MS/Há VM</p>
+            </div>
+          </div>
+
+
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-4">
+              <label class="col-form-label">Reserva calidad baja</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+          </div>
           
-          
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-4">
+              <label class="col-form-label">Reserva calidad alta</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-4">
+              <label class="col-form-label">Compra reservas</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-4">
+              <label class="col-form-label">Reservas de primavera</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" >
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-6">
+              <label class="col-form-label">% Utilización reservas</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" value="90">
+            </div>
+          </div>
+    
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-6">
+              <label class="col-form-label">% Utilización concentrados</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" value="95">
+            </div>
+          </div>
+    
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-6">
+              <label class="col-form-label">% Utilización PASTURAS (PASTOREO DIRECTO + COSECHA MECÁNICA)</label>
+            </div>
+            <div class="col-3">
+              <input type="number" class="form-control" value="65" >
+            </div>
+            <div class="col-1">
+              <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title='Este valor incluye el pastoreo directo y la confección de reservas en la plataforma. Los valores de referencia y como valores "máximos" en los ensayos de CRS y proyecto 10 mil dieron un 82 %.'>
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
@@ -148,7 +443,7 @@
 
 
 
-
+<!-------------------------------------------- PASTURAS ------------------------------------------------------------->
 
       <div class="d-grid mt-3">
         <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -163,35 +458,33 @@
               <label for="inputPassword6" class="col-form-label  form-control-sm">Productividad (%)</label>
             </div>
             <div class="col-2">
-              <input type="number" id="inputPassword6" class="form-control  form-control-sm" value="15" aria-describedby="passwordHelpInline">
+              <input type="number" id="inputPassword6" class="form-control  form-control-sm" value="100" aria-describedby="passwordHelpInline">
             </div>
             <div class="col-2">
               <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Productividad global del sistema, aumenta o disminuye el global por este factor.">
                 <i class="fas fa-info-circle"></i>
               </button>
             </div>
-            
-              
-          
+
         </div>
 
-          <table class="table table-sm table-bordered tabla-bien-chica">
-            
+          <table class="table table-sm table-bordered tabla-bien-chica tabla-pasturas">            
             <tr>
               <td > </td>
               <td > </td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
-              <td >100</td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
+              <td ></td>
             </tr>
 
 
@@ -210,12 +503,13 @@
                 <td >Dic</td>
                 <td >Ene</td>
                 <td >Feb</td>
+                <td >% prod.</td>
               </tr>
             
             
               <tr>
 
-                <td><input type="number" class="form-control form-control-sm" value="15" ></td>
+                <td><input type="number" class="form-control form-control-sm" ></td>
                 <td>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>Uso</option>
@@ -239,9 +533,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
               </tr>
               <tr>
-                <td><input type="number" class="form-control form-control-sm" value="20" ></td>
+                <td><input type="number" class="form-control form-control-sm" ></td>
                 <td>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>Uso</option>
@@ -265,9 +560,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
               </tr>
               <tr>
-                <td><input type="number" class="form-control form-control-sm" value="5" ></td>
+                <td><input type="number" class="form-control form-control-sm"></td>
                 <td>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>Uso</option>
@@ -291,6 +587,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td ><input type="number" class="form-control form-control-sm" value="100" ></td>
               </tr>
               
             
@@ -309,7 +606,7 @@
 
 
 
-
+<!-------------------------------------------- ANIMALES ------------------------------------------------------------->
 
       <div class="d-grid mt-3">
         <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
@@ -318,41 +615,326 @@
       </div>
       <div class="collapse" id="collapseExample3">
         <div class="card card-body table-responsive">
-          <table class="table table-sm table-bordered tabla-bien-chica">
-            <thead>
+
+          <div class="row align-items-center mb-3 text-end">
+            <div class="col-1">
+              <label class="col-form-label form-control-sm ">PV</label>
+            </div>
+            <div class="col-2">
+              <input type="number" class="form-control form-control-sm" >
+            </div>
+            <div class="col-3">
+              <label class="col-form-label form-control-sm">Cont. Graso </label>
+            </div>
+            <div class="col-2">
+              <input type="number" class="form-control form-control-sm" >
+            </div>
+            <div class="col-2">
+              <label class="col-form-label form-control-sm">Cont. Prot.</label>
+            </div>
+            <div class="col-2">
+              <input type="number" class="form-control form-control-sm" >
+            </div>
+
+          </div>
+
+
+
+
+          <table class="table table-sm table-bordered tabla-bien-chica">            
+
               <tr>
-                <th scope="col">Hás</th>
-                <th scope="col">Uso</th>
-                <th scope="col">Marzo</th>
-                <th scope="col">Abril</th>
-                <th scope="col">Mayo</th>
-                <th scope="col">Junio</th>
-                <th scope="col">Julio</th>
-                <th scope="col">Agosto</th>
-                <th scope="col">Septiembre</th>
-                <th scope="col">Octubre</th>
-                <th scope="col">Noviembre</th>
-                <th scope="col">Diciembre</th>
-                <th scope="col">Enero</th>
-                <th scope="col">Febrero</th>
+                <td ></td>
+                <td >Mar</td>
+                <td >Abr</td>
+                <td >May</td>
+                <td >Jun</td>
+                <td >Jul</td>
+                <td >Ago</td>
+                <td >Set</td>
+                <td >Oct</td>
+                <td >Nov</td>
+                <td >Dic</td>
+                <td >Ene</td>
+                <td >Feb</td>
+                <td >Total</td>
               </tr>
-            </thead>
-            <tbody>
+            
+            
               <tr>
-                <td>10</td>
-                <td>TB-Lotus-Festuca Secano P 1 (TEMPRANO)</td>
+                <td>Nº VO</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td>20</td>
-                <td>Pradera 2° año base festuca SFS rot</td>
+                <td>Nº VS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td>15</td>
-                <td>Alfalfa 1</td>
+                <td>Lts/VO/día</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>% Grasa</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               
-            </tbody>
           </table>
+
+          <div class="row align-items-center mb-1">
+            <div class="col-3">
+              <label class="col-form-label form-control-sm "><strong>Corrección carga</strong></label>
+            </div>
+            <div class="col-2">
+              <input type="number" class="form-control form-control-sm" value="1.00" >
+            </div>
+            <div class="col-1">
+              <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title='Factor correción VO y VS. Mueve todos los meses en la misma proporcion.'>
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+          <table class="table table-sm table-bordered tabla-bien-chica">            
+            <tr>
+              <td ></td>
+              <td >Mar</td>
+              <td >Abr</td>
+              <td >May</td>
+              <td >Jun</td>
+              <td >Jul</td>
+              <td >Ago</td>
+              <td >Set</td>
+              <td >Oct</td>
+              <td >Nov</td>
+              <td >Dic</td>
+              <td >Ene</td>
+              <td >Feb</td>
+              <td >Total</td>
+            </tr>
+          
+          
+            <tr>
+              <td>Nº VO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Nº VS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>VM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            
+        </table>
+
+
+
+        <div class="row align-items-center mb-1">
+          <div class="col-4">
+            <label class="col-form-label form-control-sm "><strong>Corrección Prod. Ind.</strong></label>
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control form-control-sm" value="1.00" >
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title='Factor corrección Lts/VO/día. Mueve todos los meses en la misma proporción.'>
+              <i class="fas fa-info-circle"></i>
+            </button>
+          </div>
+        </div>
+        <table class="table table-sm table-bordered tabla-bien-chica">            
+          <tr>
+            <td ></td>
+            <td >Mar</td>
+            <td >Abr</td>
+            <td >May</td>
+            <td >Jun</td>
+            <td >Jul</td>
+            <td >Ago</td>
+            <td >Set</td>
+            <td >Oct</td>
+            <td >Nov</td>
+            <td >Dic</td>
+            <td >Ene</td>
+            <td >Feb</td>
+            <td >Total</td>
+          </tr>
+        
+        
+          <tr>
+            <td>Lts/VO/día</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+      </table>
+
+      
+      <table class="table table-sm table-bordered tabla-bien-chica mt-3">            
+        <tr>
+          <td ><strong>Precio de leche </strong></td>
+          <td >Mar</td>
+          <td >Abr</td>
+          <td >May</td>
+          <td >Jun</td>
+          <td >Jul</td>
+          <td >Ago</td>
+          <td >Set</td>
+          <td >Oct</td>
+          <td >Nov</td>
+          <td >Dic</td>
+          <td >Ene</td>
+          <td >Feb</td>
+          <td >Total</td>
+        </tr>
+      
+      
+        <tr>
+          <td>$/Litro Remitido</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>TC</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Cv U$S/lt</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+    </table>
           
           
         </div>
@@ -362,11 +944,27 @@
 
 
       
+      <!-------------------------------------------- CALIBRAR ------------------------------------------------------------->
+
+      <div class="row mt-3 g-3">
+        
+        <div class="d-grid col-2">
+          <button class="btn btn-secondary" type="button">Atrás</button>
+        </div>
       
-      <div class="d-grid gap-5 mt-3">
-        <button class="btn btn-secondary btn-lg" type="button">Calibrar/recalibrar</button>
+        <div class="d-grid col-8">
+          <button class="btn btn-secondary btn-lg" type="button">Calibrar/recalibrar</button>
+        </div>
+      
+        <div class="d-grid col-2">
+          <button class="btn btn-secondary" type="button" >Propuesta</button>
+        </div>
+        
+        
       </div>
       <br>
+
+
 
 
 
@@ -378,83 +976,88 @@
       <div class="row align-items-center">
         <div class="col-4">
         </div>
-        <div class="col-3">
-          <p class="text-center">Año calculado</p>
+        <div class="col-2">
+          <p class="text-center">Calculado</p>
         </div>
-        <div class="col-3">
-          <p class="text-center">Año de referencia</p>
+        <div class="col-2">
+          <p class="text-center">Referencia</p>
         </div>
         
       </div>
 
-    <div class="row align-items-center mb-3">
+    <div class="row align-items-center mb-3 text-end">
       <div class="col-4">
         <label for="inputPassword6" class="col-form-label">Pasturas Kg MS/Há VM</label>
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" disabled value="5636" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" value="34253" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-2">
+      <div class="col-1">
         <label for="inputPassword6" class="col-form-label text-success">5%</label>
       </div>
     </div>
 
-    <div class="row align-items-center mb-3">
+    <div class="row align-items-center mb-3 text-end">
       <div class="col-4">
         <label for="inputPassword6" class="col-form-label">Reservas Kg MS/Há VM</label>
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" disabled value="67534" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" value="54355" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-2">
+      <div class="col-1">
         <label for="inputPassword6" class="col-form-label text-success">5%</label>
       </div>
     </div>
 
-    <div class="row align-items-center mb-3">
+    <div class="row align-items-center mb-3 text-end">
       <div class="col-4">
         <label for="inputPassword6" class="col-form-label">Concentrados Kg MS/Há VM</label>
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" disabled value="5345" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" value="2345" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-2">
+      <div class="col-1">
         <label for="inputPassword6" class="col-form-label text-danger">25%</label>
       </div>
     </div>
 
-    <div class="row align-items-center mb-3">
+    <div class="row align-items-center mb-3 text-end">
       <div class="col-4">
         <label for="inputPassword6" class="col-form-label">Margen alim. U$S/há	</label>
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control" disabled value="5500" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-3">
+      <div class="col-2">
         <input type="number" id="inputPassword6" class="form-control"  value="564" aria-describedby="passwordHelpInline">
       </div>
-      <div class="col-2">
+      <div class="col-1">
         <label for="inputPassword6" class="col-form-label text-success">9%</label>
       </div>
     </div>
 
     <br>
-    <div class="alert alert-danger" role="alert">
-      El valor XXXXXXXXXXX es muy alto.
+    <div class="alert alert-warning" role="alert">
+      Peso Vivo (Kg) debería estar entre 400 y 800.
     </div>
     <div class="alert alert-warning" role="alert">
-      El valor XXXXXXXXXXXX debería estar en el rango de XXXXXX XXXXXXX.
+      % Utilización reservas debería estar entre 30 y 100.
     </div>
-
+    <div class="alert alert-warning" role="alert">
+      % Utilización concentrados debería estar entre 30 y 100.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      % Utilización PASTURAS (PASTOREO DIRECTO + COSECHA MECÁNICA) debería estar entre 0 y 100.
+    </div>
 
 
     
