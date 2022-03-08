@@ -1,3 +1,7 @@
+.theDiv {
+    padding: 0 !important;
+}
+
 .nav-link {
     font-weight: bold;
     letter-spacing: .15rem;
@@ -14,6 +18,7 @@ li,ul{
     padding: 0;
     margin: 0;
 }
+
 .header-top i {
     font-size: 18px;
 }
@@ -273,6 +278,9 @@ li,ul{
 }
 .navi i {
     font-size: 20px;
+}
+.navi {
+    height: 90vh;
 }
 .label.label-primary {
     border-radius: 50%;
@@ -562,9 +570,6 @@ header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 /*Main CSS*/
-
-
-
 
 
 

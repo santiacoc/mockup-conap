@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="./dashboard.css" rel="stylesheet">
-
-    <title>Admin</title>
+    <link href="./usuarios.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Administrador</title>
 
 </head>
 <body>
@@ -16,7 +19,7 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <body class="home">
-    <div class="container-fluid display-table">
+    <div class="container-fluid display-table theDiv">
         <div class="row display-table-row">
             <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                 <div class="logo">
@@ -24,12 +27,10 @@
                     </a>
                 </div>
                 <div class="navi">
-                    <ul>
-                        <li class="active"><a href="./dashboard.html"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Inicio</span></a></li>
-                        <li><a href="../login/login.html"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Login</span></a></li>
+                    <ul>                        
+                        <li class="active"><a href="./dashboard.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Usuarios</span></a></li>
+                        <li><a href="./biblioteca.html"><i class="fa fa-book" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Biblioteca de Usos</span></a></li>
                         <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Estadísticas</span></a></li>
-                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Usuarios</span></a></li>
-                        <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Ajustes</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -48,21 +49,12 @@
                                     </button>
                                 </div>
                             </nav>
-                            <div class="search hidden-xs hidden-sm">
-                                <input type="text" placeholder="Busqueda..." id="search">
-                            </div>
+                            
                         </div>
                         <div class="col-md-5">
                             <div class="header-rightside">
                                 <ul class="list-inline header-top pull-right">
-                                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Añadir Proyecto</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                    <li>
-                                        <a href="#" class="icon-info">
-                                            <i class="fa fa-bell" aria-hidden="true"></i>
-                                            <span class="label label-primary">3</span>
-                                        </a>
-                                    </li>
+                                    <li class="hidden-xs"><a href="../login/login.html" class="add-project" >Logout</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../imgs/logoCon.png" alt="user">
                                             <b class="caret"></b></a>
@@ -86,43 +78,250 @@
                     </header>
                 </div>
                 <div class="user-dashboard">
-                    <h1>Hello, JS</h1>
+                    <h1>Hola, Admin</h1>
                     <div class="row">
-                        <div class="col-md-5 col-sm-5 col-xs-12 gutter">
-
-                            <div class="sales">
-                                <h2>Tus usuarios</h2>
-
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span>Período:</span> Último Año
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a href="#">2012</a>
-                                        <a href="#">2014</a>
-                                        <a href="#">2015</a>
-                                        <a href="#">2016</a>
+                            <!-- USUARIOS -->
+                            <div class="container">
+                                <div class="table-responsive">
+                                    <div class="table-wrapper">
+                                        <div class="table-title">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <h2>Manejo de <b>Usuarios</b></h2>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <a href="#addEmployeeModal" class="btn green" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Añadir nuevo usuario</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-group search">
+                                            <div class="form-outline">
+                                              <input type="search" id="form1" placeholder="Buscar..." class="form-control" />
+                                              <label class="form-label" for="form1" ></label>
+                                            </div>
+                                            <button type="button" class="btn blue">
+                                                <i class="material-icons" data-toggle="tooltip" title="Buscar">&#xE8B6;</i>
+                                            </button>
+                                          </div>
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" id="selectAll">
+                                                            <label for="selectAll"></label>
+                                                        </span>
+                                                    </th>
+                                                    <th>Nombre</th>
+                                                    <th>Email</th>
+                                                    <th>Código</th>
+                                                    <th class="administrador">Es Administrador</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                            <label for="checkbox1"></label>
+                                                        </span>
+                                                    </td>
+                                                    <td>Usuario 1</td>
+                                                    <td>usuario1@mail.com</td>
+                                                    <td>35E7 1</td>
+                                                    <td class="admin"><input type="checkbox" id="checkbox1" name="options[]" value="1"></td>
+                                                    <td>
+                                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+                                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                                                        <a href="#recoverPasswordModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cambiar contraseña">&#xE897;</i></a>                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                            <label for="checkbox1"></label>
+                                                        </span>
+                                                    </td>
+                                                    <td>Usuario 2</td>
+                                                    <td>usuario2@mail.com</td>
+                                                    <td>35E7 2</td>
+                                                    <td class="admin"><input type="checkbox" id="checkbox1" name="options[]" value="2"></td>
+                                                    <td>
+                                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+                                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                                                        <a href="#recoverPasswordModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cambiar contraseña">&#xE897;</i></a>                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                            <label for="checkbox1"></label>
+                                                        </span>
+                                                    </td>
+                                                    <td>Usuario 3</td>
+                                                    <td>usuario3@mail.com</td>
+                                                    <td>35E7 3</td>
+                                                    <td class="admin"><input type="checkbox" id="checkbox1" name="options[]" value="2"></td>
+                                                    <td class="actions">
+                                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+                                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                                                        <a href="#recoverPasswordModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cambiar contraseña">&#xE897;</i></a>                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="custom-checkbox">
+                                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                            <label for="checkbox1"></label>
+                                                        </span>
+                                                    </td>
+                                                    <td>Usuario 4</td>
+                                                    <td>usuario4@mail.com</td>
+                                                    <td>35E7 4</td>
+                                                    <td class="admin"><input type="checkbox" id="checkbox1"  name="options[]" value="2"></td>
+                                                    <td>
+                                                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+                                                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                                                        <a href="#recoverPasswordModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cambiar contraseña">&#xE897;</i></a>                                
+                                                    </td>
+                                                </tr>					
+                                            </tbody>
+                                        </table>
+                                        <div class="clearfix">
+                                            <div class="hint-text">Mostrando <b>4</b> de <b>20</b> entradas</div>
+                                            <ul class="pagination">
+                                                <li class="page-item disabled"><a href="#">Previo</a></li>
+                                                <li class="page-item"><a href="#" class="page-link blue">1</a></li>
+                                                <li class="page-item active"><a href="#" class="page-link blue">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link blue">3</a></li>
+                                                <li class="page-item"><a href="#" class="page-link ">Siguiente</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>        
+                            </div>
+                            <!-- Edit Modal HTML -->
+                            <div id="addEmployeeModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form>
+                                            <div class="modal-header">						
+                                                <h4 class="modal-title">Añadir Usuario</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            </div>
+                                            <div class="modal-body">					
+                                                <div class="form-group">
+                                                    <label>Nombre</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Código</label>
+                                                    <textarea class="form-control" required></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rol</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>					
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                                <input type="submit" class="btn btn-success" value="Añadir">
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-7 col-sm-7 col-xs-12 gutter">
-
-                            <div class="sales report">
-                                <h2>Reporte</h2>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span>Período:</span> Último Año
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a href="#">2012</a>
-                                        <a href="#">2014</a>
-                                        <a href="#">2015</a>
-                                        <a href="#">2016</a>
+                            <!-- Edit Modal HTML -->
+                            <div id="editEmployeeModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form>
+                                            <div class="modal-header">						
+                                                <h4 class="modal-title">Editar Usuario</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            </div>
+                                            <div class="modal-body">					
+                                                <div class="form-group">
+                                                    <label>Nombre</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Código</label>
+                                                    <textarea class="form-control" required></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rol</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>					
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                                <input type="submit" class="btn btn-info" value="Guardar">
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- Delete Modal HTML -->
+                            <div id="deleteEmployeeModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form>
+                                            <div class="modal-header">						
+                                                <h4 class="modal-title">Borrar Usuario</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            </div>
+                                            <div class="modal-body">					
+                                                <p>Estás seguro de borrar éste usuario?</p>
+                                                <p class="text-warning"><small>Ésta acción no se puede deshacer.</small></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                                <input type="submit" class="btn btn-danger" value="Borrar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Recover Password Modal HTML -->
+                            <div id="recoverPasswordModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form>
+                                            <div class="modal-header">						
+                                                <h4 class="modal-title">Cambiar contraseña</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            </div>
+                                            <div class="modal-body">					
+                                                <div class="form-group">
+                                                    <label>Digite su nueva contraseña</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Repita su nueva contraseña</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+                                            <div class="modal-footer">
+                                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                                <input type="submit" class="btn btn-info" value="Guardar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
@@ -160,6 +359,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="./dashboard.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
